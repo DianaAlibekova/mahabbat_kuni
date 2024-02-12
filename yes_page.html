@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>i knew it</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Add position relative to make absolute positioning work */
+  }
+  .centered-image {
+    width: 100vw; /* 100% of viewport width */
+    height: 100vh; /* 100% of viewport height */
+    object-fit: cover; /* Maintain aspect ratio while covering the entire space */
+  }
+  .left-image {
+    position: absolute; /* Position the image absolutely */
+    top: 35%; /* Place the image at the middle of the container vertically */
+    left: 30px; /* Adjust the left positioning as needed */
+    transform: translateY(-50%); /* Adjust to vertically center the image */
+  }
+  .left-image:hover {
+  box-shadow: 0 0 30px 10px rgba(255, 0, 0, 0.7); /* Change opacity on hover */}
+
+</style>
+</head>
+<body>
+  <img class="centered-image" src="hehe.GIF" alt="Centered Image">
+  <!-- Add the new image with the class "left-image" -->
+  <!-- <img class="left-image" src="date.jpg" alt="Left Image"> -->
+  <a href="https://www.google.com/calendar/event?action=TEMPLATE&text=Valentines+Day&dates=20240214T000000Z/20240214T010000Z&details=Your+Event+Description&location=Event+Location&add=da3002@nyu.edu">
+    <img class="left-image" src="date.jpg" alt="Left Image">
+</body>
+</html>
